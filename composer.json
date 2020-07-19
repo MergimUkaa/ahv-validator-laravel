@@ -8,7 +8,6 @@
             "email": "mergimuka1@gmail.com"
         }
     ],
-    "homepage": "https://github.com/mergimuka/ahvvalidator",
     "keywords": ["Laravel", "AHVValidator", "ahv validator", "ssn validator", "check ahv", "check ssn", "swiss ssn"],
     "require": {
         "illuminate/support": "~5|~6|~7"

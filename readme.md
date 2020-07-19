@@ -1,9 +1,6 @@
 # AHVValidator
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 
 This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
 
@@ -12,20 +9,26 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require mergimuka/ahvvalidator
+$ composer require mergimuka/ahv-validator
 ```
 
 ## Usage
-
+``` bash
+    use mergimuka\AHVValidator\Facades\AHVValidator;
+    $result = AHVValidator::check('756.9217.0769.85');
+```
+## Result
+``` bash
+    {
+    "valid": true,
+    "length": 13,
+    "description": "AHV number is correct."
+    }
+```
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
@@ -38,7 +41,6 @@ If you discover any security related issues, please email author email instead o
 ## Credits
 
 - [author name][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
@@ -46,12 +48,9 @@ MIT. Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/mergimuka/ahvvalidator.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/mergimuka/ahvvalidator.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/mergimuka/ahvvalidator/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/mergimuka/ahvvalidator
-[link-downloads]: https://packagist.org/packages/mergimuka/ahvvalidator
-[link-travis]: https://travis-ci.org/mergimuka/ahvvalidator
-[link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/mergimuka
+
+[link-packagist]: https://packagist.org/packages/mergimuka/ahv-validator
+[link-downloads]: https://packagist.org/packages/mergimuka/ahv-validator
+[link-author]: https://github.com/mergimukaa
 [link-contributors]: ../../contributors
