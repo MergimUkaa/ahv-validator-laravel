@@ -22,6 +22,13 @@ $ composer require mergimuka/ahv-validator
     "description": "AHV number is correct."
     }
 ```
+
+## Methods
+Currently just one method is available
+
+| methods       | param |
+| ------------- |:-----:|
+| check()       | string| 
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
