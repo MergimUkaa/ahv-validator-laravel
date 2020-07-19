@@ -1,0 +1,42 @@
+{
+    "name": "mergimuka/ahv-validator",
+    "description": "AHV or ssn validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mergim Uka",
+            "email": "mergimuka1@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/mergimuka/ahvvalidator",
+    "keywords": ["Laravel", "AHVValidator", "ahv validator", "ssn validator", "check ahv", "check ssn", "swiss ssn"],
+    "require": {
+        "illuminate/support": "~5|~6|~7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mergimuka\\AHVValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mergimuka\\AHVValidator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mergimuka\\AHVValidator\\AHVValidatorServiceProvider"
+            ],
+            "aliases": {
+                "AHVValidator": "mergimuka\\AHVValidator\\Facades\\AHVValidator"
+            }
+        }
+    }
+}
